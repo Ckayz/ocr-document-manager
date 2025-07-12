@@ -1,0 +1,7 @@
+streamlit
+s3fs
+doctr
+torch
+PyPDF2
+thefuzz
+streamlit-pdf-viewer
