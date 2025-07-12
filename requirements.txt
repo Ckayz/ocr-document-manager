@@ -7,3 +7,4 @@ thefuzz
 streamlit-pdf-viewer
 pandas
 numpy
+doctr[torch]
