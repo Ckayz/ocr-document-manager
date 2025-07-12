@@ -1,10 +1,9 @@
 streamlit
 s3fs
-doctr
-torch
 PyPDF2
 thefuzz
-streamlit-pdf-viewer
 pandas
 numpy
-doctr[torch]
+doctr[torch]   # Make sure doctr is installed with torch backend
+streamlit-pdf-viewer
+PdfWriter 
