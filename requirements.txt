@@ -5,3 +5,6 @@ torch
 PyPDF2
 thefuzz
 streamlit-pdf-viewer
+PdfWriter 
+PdfReader
+PyPDF2
