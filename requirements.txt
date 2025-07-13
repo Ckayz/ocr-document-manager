@@ -1,0 +1,15 @@
+streamlit
+s3fs
+doctr
+torch
+PyPDF2
+thefuzz
+streamlit-pdf-viewer
+PdfWriter 
+PdfReader
+PyPDF2
+python-doctr==0.8.1
+torch==2.3.0
+torchvision==0.18.0
+
+
