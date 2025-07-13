@@ -1,4 +1,12 @@
 import streamlit as st
+import os
+os.environ['USE_TORCH'] = '1'
+os.environ['TORCH_HOME'] = '/tmp/torch_cache'
+
+# Add fallback for secrets
+S3_KEY = os.getenv('S3_KEY') or st.secrets.get("S3_KEY", "")
+S3_SECRET = os.getenv('S3_SECRET') or st.secrets.get("S3_SECRET", "")
+
 
 # ---- Page setup ----
 st.set_page_config(page_title="OCR Document Manager", layout="wide")
