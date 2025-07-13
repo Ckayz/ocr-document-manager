@@ -168,7 +168,7 @@ elif page == "Process":
             st.success("All pages processed and metadata updated!")
 
 # ---- Search Page ----
-elif page == "🔍 Search":
+elif page == "Search":
     import os
     import pandas as pd
     from thefuzz import fuzz, process as fuzz_process
