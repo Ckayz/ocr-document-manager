@@ -4,6 +4,8 @@ PyPDF2>=3.0.0
 thefuzz>=0.22.0
 pandas>=2.0.0
 numpy>=1.24.0
-streamlit-pdf-viewer>=0.9.0
-doctr>=0.8.0
-torch>=2.0.0  # or "torch" (without version) if you want the latest
+streamlit-pdf-viewer==0.0.26  # Must use this exact version (latest on PyPI)
+doctr[torch]==1.9.0  # Explicitly install with PyTorch backend
+torch==2.0.0+cpu  # Force CPU-only version (Streamlit Cloud has no GPU)
+python-Levenshtein>=0.12.0  # Optional: Speeds up 'thefuzz'
+--extra-index-url https://download.pytorch.org/whl/cpu  # Ensures Torch installs correctly
