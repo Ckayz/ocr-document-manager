@@ -7,6 +7,20 @@ os.environ['TORCH_HOME'] = '/tmp/torch_cache'
 S3_KEY = os.getenv('S3_KEY') or st.secrets.get("S3_KEY", "")
 S3_SECRET = os.getenv('S3_SECRET') or st.secrets.get("S3_SECRET", "")
 
+import subprocess
+
+try:
+    from doctr.models import ocr_predictor
+except ModuleNotFoundError:
+    subprocess.check_call([
+        'pip', 'install', 
+        'doctr==1.7.0',
+        'torch==1.13.1+cpu',
+        'torchvision==0.14.1+cpu',
+        '-f', 'https://download.pytorch.org/whl/torch_stable.html'
+    ])
+    from doctr.models import ocr_predictor
+
 
 # ---- Page setup ----
 st.set_page_config(page_title="OCR Document Manager", layout="wide")
