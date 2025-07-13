@@ -5,7 +5,5 @@ thefuzz==0.22.1
 pandas==2.2.2
 numpy==1.26.4
 streamlit-pdf-viewer==0.0.26
-
-# OCR
 doctr==0.7.0
 torch==2.1.0
