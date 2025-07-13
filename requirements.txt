@@ -1,9 +1,11 @@
-streamlit
-s3fs
-doctr
-torch
-PyPDF2
-thefuzz
-streamlit-pdf-viewer
+streamlit==1.35.0
+s3fs==2024.6.0
+PyPDF2==3.0.1
+thefuzz==0.22.1
+pandas==2.2.2
+numpy==1.26.4
+streamlit-pdf-viewer==0.0.26
 
-
+# OCR
+doctr==0.7.0
+torch==2.1.0
