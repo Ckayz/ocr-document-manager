@@ -5,7 +5,7 @@ thefuzz
 pandas
 numpy
 streamlit-pdf-viewer
-doctr==0.7.0
-torch==1.13.1
-torchvision==0.14.1
+doctr==1.7.0  # Use a version that actually exists
+torch==1.13.1  # Remove +cpu (Streamlit Cloud handles this automatically)
+torchvision==0.14.1  # Remove +cpu
 python-doctr
